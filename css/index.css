@@ -1,0 +1,96 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --color-white:hsl(0, 0%, 100%);
+    --color-off-white:hsl(0, 0%, 94%);
+    --color-light-grey:hsl(0, 0%, 86%);
+    --color-smoke-grey:hsl(0, 1%, 44%);
+    --color-off-black:hsl(0, 0%, 8%);
+    --color-purple:hsl(259, 100%, 65%);
+    --color-light-red:hsl(0, 100%, 67%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--color-light-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.primary_container{
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 600px;
+    height: 500px;
+    padding: 2rem;
+    border-radius: 1rem 1rem 10rem 1rem;
+}
+.container_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: var(--color-smoke-grey);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+}
+input{
+    color: var(--color-smoke-grey);
+    font-size: 32px;
+    width: 100px;
+    height: 30px;
+    border-radius: .3rem;
+    padding: 10px;
+    border: 1px solid var(--color-light-grey);
+}
+.hr{
+    width: 80%;
+    color: var(--color-off-white);
+    border: 1px solid;
+}
+.btn_submit{
+    position: relative;
+    bottom: -70px;
+    border-radius: 100%;
+    padding: .8rem;
+    border: none;
+    background-color: var(--color-purple);
+}
+.btn_submit:hover{
+    cursor: pointer;
+    background-color: var(--color-off-black);
+}
+
+.container_response{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    height: max-content;
+}
+.response_item{
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 900;
+}
+.p_purple{
+    color: var(--color-purple);
+}
